@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="no-js">
+  {% include head.html %}
+  <body>
+      <!--[if lte IE 9]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+      <!-- Add your site or application content here -->
+
+      <!-- preloader -->
+      <div class="page-loader">
+          <div class="loader">Loading...</div>
+      </div>
+      <!-- preloader -->
+
+      {% include sticky_header_simple.html %}
+
+      <div id="about" class="about-app-area {{site.main_color}}-gradient pt-140 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-12 col-lg-12">
+                      <div class="about-app">
+                          <h2 class="color-white">{{page.header_title}}</h2>
+                          {% for paragraph in page.header_paragraphs %}
+                          <p>{{paragraph}}</p>
+                          {% endfor %}
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+
+      <div id="blog" class="blog-area pt-50 pb-110">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-12 col-lg-12">
+                      <div class="blog-wrapper blog-list blog-details {{site.main_color}}-blog mb-50 wow fadeInUp" data-wow-delay=".3s">
+                          <div class="blog-content">
+                              {% for section in page.sections %}
+                              <h5>{{section.title}}</h5>
+                                {% for paragraph in section.paragraphs %}
+                                  <p>{{paragraph}}</p>
+                                {% endfor %}
+                              {% endfor %}
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html class="no-js">
+  {% include head.html %}
+  <body>
+      <!--[if lte IE 9]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+      <!-- Add your site or application content here -->
+
+      <!-- preloader -->
+      <div class="page-loader">
+          <div class="loader">Loading...</div>
+      </div>
+      <!-- preloader -->
+
+      {% include sticky_header.html %}
+
+      <!-- slider start -->
+      <div id="home" class="slider-area {{site.main_color}}-gradient pos-relative wave-shape">
+         <div class="slider-active">
+              <div class="single-slider slider-height d-flex align-items-center">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-xl-8 col-lg-8 col-md-8">
+                              <div class="silder-content pt-170">
+                                  <h1 class="white-color mb-35" data-animation="fadeInDown" data-delay=".3s">{{page.home_title}}</h1>
+                                  <p data-animation="fadeInDown" data-delay=".5s">{{page.home_description}}</p>
+                              </div>
+                              <div class="about-app">
+                                  <div class="get-app mt-30">
+                                      <a href="{{site.appstore_url}}"><i class="ti-apple"></i> <p>Available on <br> <b>Apple Store</b></p></a>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="col-xl-4 col-lg-4 col-md-4">
+                              <div class="slider-app-thumb pt-140" data-animation="fadeInRight" data-delay="1.2s">
+                                  <img src="{{ site.url }}/assets/img/slider/app-blue.png" alt="">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+         </div>
+      </div>
+      <!-- slider end -->
+
+      <!-- features-area start -->
+      <div class="features-area pt-105 pb-110">
+          <div class="container">
+              <div class="row">
+                  {% for top_feature in page.top_features %}
+                  <div class="col-xl-3 col-lg-3 col-md-3">
+                      <div class="features-wrapper text-center mb-30 wow fadeIn" data-wow-delay="0.2s">
+                          <div class="features-icon-img mb-20">
+                            <img src="{{ site.url }}//assets/img/{{top_feature.icon}}" alt="{{service.header}}">
+                          </div>
+                          <h4 class="text-center">{{top_feature.header}}</h4>
+                          <p class="text-center">{{top_feature.text}}</p>
+                      </div>
+                  </div>
+                  {% endfor %}
+              </div>
+          </div>
+      </div>
+      <!-- features-area end -->
+
+      <div class="how-it-area-area pt-0">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-12 col-lg-12">
+                      <div class="area-title text-center mb-30" >
+                          <h2 class="mb-15">How It Work</h2>
+                          <p>Start recording in just a matter of seconds</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xl-10 col-lg-10 offset-lg-1 offset-xl-1">
+                      <div class="video wow fadeInUp" data-wow-delay="0.3s">
+                          <img src="{{ site.url }}/assets/img/bg/video.jpg" alt="">
+                          <a class="popup-video" href="https://vimeo.com/73625505"><img src="{{ site.url }}/assets/img/icon/play.png" alt=""></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="how-it-work-content-area gray-bg pb-50">
+              <div class="container">
+                  <div class="row">
+
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- about-app-area start -->
+      <div id="about" class="about-app-area {{site.main_color}}-gradient pt-140 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-6 col-lg-6">
+                      <div class="about-app">
+                          <h2 class="color-white">{{page.about_title}}</h2>
+                          {% for p in page.about_paragraphs %}
+                          <p>{{p}}</p>
+                          {% endfor %}
+                          <div class="get-app mt-30">
+                              <a href="{{site.appstore_url}}"><i class="ti-apple"></i> <p>Available on <br> <b>Apple Store</b></p></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6">
+                      <div class="about-app-thumb">
+                          <img src="{{ site.url }}/assets/img/about/about-app.png" alt="about app">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- about-app-area end -->
+
+       <!-- how-it-area-area start -->
+
+      <!-- how-it-area-area start -->
+
+       <!-- features-area start -->
+      <div id="features" class="features-area pt-150 pb-50">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-6 col-lg-8 offset-lg-2 offset-xl-3">
+                      <div class="area-title text-center mb-60">
+                          <h2 class="mb-15">This is the easiest to use Call recorder app.</h2>
+                          <p>Make cheap and unlimited call recordings just with 1 click!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xl-4 col-lg-12 col-md-12">
+                      <div class="features-app-thumb mb-60 wow fadeInLeft" data-wow-delay="0.2s">
+                          <img src="{{ site.url }}/assets/img/about/features-app.png" alt="">
+                      </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-12 col-md-12">
+                      <div class="row pt-60">
+                        {% for feature in page.features %}
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="main-features features-{{site.main_color}} mb-55 wow fadeIn" data-wow-delay="0.4s">
+                                <div class="features-icon">
+                                    <span><i class="{{feature.icon}}"></i></span>
+                                </div>
+                                <div class="features-content">
+                                    <h4>{{feature.header}}</h4>
+                                    <p>{{feature.text}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- features-area start -->
+      <!-- download area start -->
+      <div class="download-area {{site.main_color}}-gradient star-pattern pt-150 pb-150">
+          <div class="smart-watch  wow fadeInRight" data-wow-delay=".3s">
+              <img src="{{ site.url }}/assets/img/bg/watch.png" alt="">
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-6 col-lg-8 offset-lg-2 offset-xl-3">
+                      <div class="area-title white-text text-center  mb-60">
+                          <h2 class="mb-15">Download This App Today</h2>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xl-6 col-lg-8 offset-lg-2 offset-xl-3">
+                      <div class="get-app download-app text-center">
+                          <a href="{{site.appstore_url}}"><i class="ti-apple"></i><p>Available on<br><b>Apple Store</b></p></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- download area end -->
+      <!-- screenshot-area  start -->
+      <div id="screenshots" class="screenshot-area pt-150 pb-135 wow fadeInUp" data-wow-delay=".2s">
+          <div class="app-padding">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xl-6 col-lg-8 offset-lg-2 offset-xl-3">
+                          <div class="area-title text-center mb-10">
+                              <h2 class="mb-15">App Screenshots</h2>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="container-fluid">
+                  <div class="app-active app-{{site.main_color}}-active">
+                    {% for screenshot in page.screenshots %}
+                      <div class="app-item">
+                          <a class="popup-image" href="{{ site.url }}/assets/img/{{screenshot}}"><img src="{{ site.url }}/assets/img/{{screenshot}}" alt=""></a>
+                      </div>
+                    {% endfor %}
+
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- screenshot-area  end -->
+
+      <!-- faq start -->
+      <div id="faq" class="faq-area pt-150 pb-100">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-6 col-lg-8 offset-lg-2 offset-xl-3">
+                      <div class="area-title text-center mb-70">
+                          <h2 class="mb-15">Frequentily Ask Question</h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xl-6 col-lg-6">
+                      <div class="faq-wrapper mb-30 wow fadeInLeft" data-wow-delay=".3s">
+                          <div class="accordion" id="accordion">
+                            {% for faq in page.faqs %}
+                            <div class="card">
+                                <div class="card-header" id="heading_{{forloop.index}}">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed btn-{{site.main_color}}" type="button" data-toggle="collapse" data-target="#collapse_{{forloop.index}}" aria-expanded="false" aria-controls="collapse_{{forloop.index}}">{{faq.question}}</button>
+                                    </h5>
+                                </div>
+                                <div id="collapse_{{forloop.index}}" class="collapse" aria-labelledby="heading_{{forloop.index}}" data-parent="#accordion">
+                                    <div class="card-body">{{faq.answer}}</div>
+                                </div>
+                            </div>
+                            {% endfor %}
+
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6">
+                      <div class="faq-img mb-30 wow fadeInRight" data-wow-delay=".3s">
+                          <img src="{{ site.url }}/assets/img/bg/faq-app.png" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- faq end -->
+
+
+      <!-- map-area start -->
+      <div id="contact" class="map-area">
+          <div class="container">
+              <div class="subscribe-box {{site.main_color}}-gradient pt-60 pb-60 wow fadeInUp" data-wow-delay=".3s">
+                  <div class="subscribe-inner">
+                      <h1>Subscribe Us</h1>
+                      <div class="subscribe-form">
+                          <form action="#">
+                              <input type="text" placeholder="Enter your email :">
+                              <button class="btn {{site.main_color}}-gradient">Subscribe</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="contact-map"></div>
+      </div>
+      <!-- map-area end -->
+
+      <!-- contact-form-area start -->
+      <div class="contact-form-area pt-150 pb-100">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-5 col-lg-5">
+                      <div class="area-title mb-40">
+                          <h2 class="mb-15">Get In Touch</h2>
+                      </div>
+                      <div class="contact-form mb-50 wow fadeInLeft" data-wow-delay=".3s">
+                          <form id="contact-form" action="mail.php" method="POST">
+                              <input name="name" type="text" placeholder="Your Name :">
+                              <input name="email" type="email" placeholder="Email :">
+                              <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message :"></textarea>
+                              <button class="btn {{site.main_color}}-gradient" type="submit">Send Message</button>
+                          </form>
+                          <p class="ajax-response"></p>
+                      </div>
+                  </div>
+                  <div class="col-xl-5 col-lg-6 offset-lg-1 offset-xl-1">
+                      <div class="area-title mb-40">
+                          <h2 class="mb-15">Contact Info</h2>
+                          <p>Don’t Hesitate to contact with us for any kind of information</p>
+                      </div>
+                      <div class="contact-info mb-50 wow fadeInRight {{site.main_color}}-contact" data-wow-delay=".3s">
+                          <ul>
+                              <li>
+                                  <div class="contact-icon">
+                                      <i class="ti-email"></i>
+                                  </div>
+                                  <div class="contact-text">
+                                      <h5>Email Us</h5>
+                                      <span>{{site.support_email_address}}</span>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- contact-form-area end -->
+
+    {% include footer.html %}
+  </body>
+</html>
