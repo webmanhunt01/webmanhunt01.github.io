@@ -1,12 +1,12 @@
 # Site settings
 main_color: "yellow"
 # blue red pink yellow
-title: "Call Recorder Rec Phone Call"
-app_name: "Call Recorder Rec Phone Call"
-app_domain: "callrecorder.us"
-support_email_address: "support@callrecorder.us"
+title: "Manhunt - #1 Gay Dating App"
+app_name: "Manhunt - #1 Gay Dating App"
+app_domain: "manhunt.datingapp.me"
+support_email_address: "support@arency.com"
 appstore_url: "https://itunes.apple.com/us/app/id1410616319"
 #url: "http://localhost:4000/"
-url: "https://callrecorder.us/"
+url: "https://manhunt.datingapp.me"
 # Build settings
 markdown: kramdown
