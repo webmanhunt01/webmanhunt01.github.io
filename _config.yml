@@ -1,12 +1,11 @@
 # Site settings
 main_color: "yellow"
 # blue red pink yellow
-title: "_APPNAME_"
-app_name: "_APPNAME_"
-app_domain: "_APPDOMAIN_"
+title: "Manhunt Dating App"
+app_name: "Manhunt Dating App"
+app_domain: "manhunt.datingapp.me"
 support_email_address: "support@_APPDOMAIN_"
 appstore_url: "https://itunes.apple.com/us/app/id1410616319"
-url: "http://localhost:4000/"
-# url: "https://callrecorder.us/"
+url: "https://manhunt.datingapp.me/"
 # Build settings
 markdown: kramdown
