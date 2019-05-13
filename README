@@ -1,0 +1,5 @@
+```
+cd directory
+jekyll new . --force
+bundle exec jekyll serve
+```

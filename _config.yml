@@ -4,9 +4,9 @@ main_color: "yellow"
 title: "Manhunt - #1 Gay Dating App"
 app_name: "Manhunt - #1 Gay Dating App"
 app_domain: "manhunt.datingapp.me"
-support_email_address: "support@arency.com"
+support_email_address: "manhunt-support@datingapp.me"
 appstore_url: "https://itunes.apple.com/us/app/id1410616319"
-#url: "http://localhost:4000/"
+#url: "http://127.0.0.1:4000/"
 url: "https://manhunt.datingapp.me"
 # Build settings
 markdown: kramdown
